@@ -1,10 +1,6 @@
 # CS426 Assignment 2 Spring 2026
 
-## Group Members
-
-- Evelyn Johnson
-- Viviana Lopez
-- Ibrahim Siddiqui
+Evelyn Johnson
 
 ## Formal Elements
 
