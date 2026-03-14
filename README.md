@@ -2,6 +2,9 @@
 
 Evelyn Johnson
 
+## Assignment 4
+I designed some additional gameplay elements to enhance the two puzzles that we created previously. I used multiple instances of new colored lighting (point, spot), particle effects (slowing down some instances, speeding up others), added/edited billboards (explaination text, binary-to-decimal cheat sheet, puzzle labeling), dropped viruses into the computer + arranged them around the spawn, etc. I attempted to make it more apparent what the serious objective was: to protect your computer from viruses. Instead of it just being something we tell the user, I wanted it to be a physical, visual thing that they saw slowly filling up the "room". I also added being able to teleport back to the main point so that a single player can play the game if they choose to do so.
+
 ## Formal Elements
 
 ### Player Interaction Pattern
@@ -32,5 +35,5 @@ Evelyn Johnson
 - Player in the control room must communicate the puzzle solutions to the player in the puzzle room
 - Verbal communication to pass along data between players
 
-## Game Theme
+## Design
 The theme for this game was "Computer Architecture and Thieves". We followed this by integrating computer architecture in some of the environment as well as our narrative conflict (viruses acting as digital thieves). We also had our puzzles revolve around computer components.
