@@ -22,14 +22,14 @@ public class TeleportationScript : NetworkBehaviour
 
     public override void OnNetworkSpawn()
     {
-        disabled.OnValueChanged += OnDisabledChanged;
-        OnDisabledChanged(false, disabled.Value);
+        //disabled.OnValueChanged += OnDisabledChanged;
+        //OnDisabledChanged(false, disabled.Value);
     }
 
     private void OnCollisionEnter(Collision other)
     {
         if (!other.gameObject.CompareTag("Player")) return;
-        if (disabled.Value) return;
+        //if (disabled.Value) return;
         NetworkObject playerNetObj = other.gameObject.GetComponent<NetworkObject>();
         if (playerNetObj == null) return;
         if (playerNetObj.IsOwner)
@@ -41,7 +41,7 @@ public class TeleportationScript : NetworkBehaviour
     [ServerRpc(RequireOwnership = false)]
     private void RequestTeleportServerRpc(ulong playerNetworkId)
     {
-        if (disabled.Value) return;
+        //if (disabled.Value) return;
         if (!NetworkManager.Singleton.SpawnManager.SpawnedObjects.TryGetValue(
             playerNetworkId, out NetworkObject playerNetObj))
             return;
@@ -56,7 +56,7 @@ public class TeleportationScript : NetworkBehaviour
             }
         );
 
-        disabled.Value = true;
+        //disabled.Value = true;
     }
 
     [ClientRpc]
@@ -76,13 +76,13 @@ public class TeleportationScript : NetworkBehaviour
 
     private void OnDisabledChanged(bool oldValue, bool newValue)
     {
-        if (newValue)
-        {
-            if (col != null)
-                col.enabled = false;
+        //if (newValue)
+        //{
+        //    if (col != null)
+        //        col.enabled = false;
 
-            if (rend != null)
-                rend.material.color = Color.gray;
-        }
+        //    if (rend != null)
+        //        rend.material.color = Color.gray;
+        //}
     }
 }

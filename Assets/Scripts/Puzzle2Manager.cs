@@ -7,6 +7,7 @@ public class Puzzle2Manager : NetworkBehaviour
     [SerializeField] private int[] correctSequence = { 1, 3, 0, 2 };
     [SerializeField] private Puzzle2Plate[] plates;
     [SerializeField] private GameObject solvedTextObject;
+    public GameObject winLights;
     public bool puzzleActive = true;
     private int currentStep = 0;
     private void Start()
@@ -55,6 +56,7 @@ public class Puzzle2Manager : NetworkBehaviour
     private void ShowSolvedTextClientRpc()
     {
         solvedTextObject.SetActive(true);
+        winLights.SetActive(true);
     }
 
     [ClientRpc]
