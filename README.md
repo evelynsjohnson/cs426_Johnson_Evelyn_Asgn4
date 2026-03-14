@@ -24,7 +24,7 @@ I designed some additional gameplay elements to enhance the two puzzles that we 
 - A: Delete it!
 
 ### Unusual Rules
-
+[These blockades were removed to allow for single player experience]
 - Only one player can be in the control room
 - Only one player can be in the puzzle room
 - Players cannot switch roles
